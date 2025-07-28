@@ -1,6 +1,6 @@
 package model;
-import model.constants.Colour;
 import model.service.ShoppingCart;
+import model.constants.Colour;
 
 public class Main {
 

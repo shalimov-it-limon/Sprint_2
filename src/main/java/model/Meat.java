@@ -1,5 +1,4 @@
 package model;
-
 import model.constants.Discounts;
 
 public class Meat extends  Food{

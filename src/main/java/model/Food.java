@@ -1,14 +1,14 @@
 package model;
-import model.constants.Discounts;
 
 public abstract  class Food{
     protected int amount;
     protected double price;
-    private boolean isVegetarian;
+    protected boolean isVegetarian;
 
     public Food(int amount, double price, boolean isVegetarian){
         this.amount = amount;
         this.price = price;
+        this.isVegetarian = isVegetarian;
     }
 
     public abstract double getDiscount();
