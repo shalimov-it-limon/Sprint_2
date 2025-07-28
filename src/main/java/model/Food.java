@@ -1,30 +1,21 @@
 package model;
 import model.constants.Discounts;
 
-public class Food implements Discountable{
-    private int amount;
-    private double price;
+public abstract  class Food{
+    protected int amount;
+    protected double price;
     private boolean isVegetarian;
 
-    public Food(int amount, double price){
+    public Food(int amount, double price, boolean isVegetarian){
         this.amount = amount;
         this.price = price;
     }
 
-    public void setVegetarian(boolean vegetarian) {
-        isVegetarian = vegetarian;
-    }
+    public abstract double getDiscount();
 
-    @Override
-    public double getDiscount() {
-        return Discounts.comonDiscount;
-    }
+    public abstract double getPrice();
 
-    public double getPrice(){
-        return price;
-    }
+    public abstract int getAmount();
 
-    public boolean isVegetarian(){
-        return isVegetarian;
-    }
+    public abstract boolean isVegetarian();
 }
