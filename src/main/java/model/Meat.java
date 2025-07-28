@@ -1,13 +1,13 @@
 package model;
 import model.constants.Discounts;
 
-public class Meat extends  Food{
+public class Meat extends  Food implements Discountable{
     public  Meat(int amount, double price){
         super(amount,price, false);
     }
 
     @Override
-    public double getDiscount() {
+    public double  getDiscount() {
         return Discounts.comonDiscount;
     }
 

@@ -11,7 +11,7 @@ public abstract  class Food{
         this.isVegetarian = isVegetarian;
     }
 
-    public abstract double getDiscount();
+   public abstract double getDiscount();
 
     public abstract double getPrice();
 
