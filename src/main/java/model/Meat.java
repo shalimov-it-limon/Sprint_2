@@ -8,7 +8,7 @@ public class Meat extends  Food {
 
     @Override
     public double  getDiscount() {
-        return Discounts.comonDiscount;
+        return Discounts.COMON_DISCOUNT;
     }
 
     @Override
