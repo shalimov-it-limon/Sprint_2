@@ -1,7 +1,7 @@
 package model;
 import model.constants.Discounts;
 
-public class Meat extends  Food implements Discountable{
+public class Meat extends  Food {
     public  Meat(int amount, double price){
         super(amount,price, false);
     }
